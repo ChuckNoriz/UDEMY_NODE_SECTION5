@@ -49,4 +49,12 @@ app.get('/about', (req, res) => {
         head:'This is About Page'
     });
 });
+
+//projects page render
+app.get('/projects', (req,res) => {
+    res.render('projects.hbs',{
+        pageTitle:'PROJECTS',
+        head:'This is Projects page'
+    })
+})
 app.listen(port, () => console.log('Running on port - ', port));
